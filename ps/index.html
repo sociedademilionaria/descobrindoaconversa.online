@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="js-focus-visible" data-js-focus-visible="">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Aperte em continuar</title>
+        <link rel="shortcut icon" href="./../img/like.png">
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #f5f5f5;
+            }
+            .like {
+                width: 120px;
+                /*height: 234px;*/
+                object-fit: contain;
+                margin-bottom: 10px;
+            }
+            .flex{
+                text-align: center;
+                min-height: 80vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .copy,.alt {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 28px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: 0.21px;
+                text-align: center;
+                color: #3a3a3a;
+            }
+            .alt {
+            	font-size: 18px;
+                font-weight: normal;
+            }
+
+            #redirect{
+                margin-top: 30px;
+                display: inline-block;
+                background-color: #2ECC71;
+                text-decoration: none;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.18;
+                letter-spacing: 1.25px;
+                text-align: center;
+                color: #ffffff;
+                padding: 15px 50px;
+                border-radius: 20px;
+                /*text-shadow: 0 5px 10px 2px rgba(0,0,0,0.3);*/
+                /*box-shadow: 0 5px 10px 2px rgba(0,0,0,0.3);*/
+                transition: all 0.1s ease-in-out;
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+            }
+            #redirect:hover{
+                background-color: #27AE60;
+                box-shadow: 0 5px 5px 2px rgba(0,0,0,0.3);
+            }
+        </style>
+        <!-- Meta Pixel Code -->
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '555565919687292');
+            fbq('track', 'AddToCart');
+            </script>
+            <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=555565919687292&ev=AddToCart&noscript=1"
+        /></noscript>
+        <!-- End Meta Pixel Code -->
+        <script>
+            function perfectLink() {
+                var path = location.pathname+location.search;
+                var perfectlink  = 'https://descobrindoaconversa.online/' + path;
+                console.log(location.pathname);
+                if (location.pathname == '/') {
+                    var perfectlink  = 'https://descobrindoaconversa.online/';
+                }
+                return location.href = perfectlink;
+            }
+        </script>
+    </head>
+    <body class="vsc-initialized">
+        <div class="flex">
+            <div class="container">
+                <img src="./../img/like.png" class="like" alt="Like icon" width="120" height="140">
+                <p class="copy">
+                    Tudo certo!
+                </p>
+                <p class="alt">
+                    Clique no botão abaixo para ser redirecionado para página solicitada!
+                </p>
+                <a href="#" id="redirect" onclick="perfectLink()">Continuar »</a>
+            </div>
+        </div>
+        <div class="flex" style="min-height: 20vh; background-color: #f1f1f1; color: #333; line-height: 25px;">
+            <div class="container">
+                Fale conosco  <br> de segunda a domingo <br> das 08:00h às 17:00h
+                <p></p>
+                PERFECT PAY – CNPJ: 28.059.320/0001-36 – MATRIZ Tiradentes 1008 Andar 20 Sala 2005 Cxpst 12, Zona 01, Maringá, PR, 87013-260
+                <br>E-mail: contato@perfectpay.com.br Este site não é afiliado ao Facebook ou TikTok ou a qualquer entidade do Facebook Inc.
+                <br>Depois que você sair do Facebook ou Tiktok, a responsabilidade não é deles e sim do nosso site.
+                <br>Fazemos os esforços necessários para indicar claramente e mostrar todas as provas do produto e usamos resultados reais.
+                <br> © 2022 - Todos os direitos reservados. <br><br>
+                <div style="width: 100%; background-color: #fff; padding: 5px;">
+                    <a href="https://siteseguro.net/termos_uso.php" target="_blank">Termos de uso</a>
+                    |
+                    <a href="https://siteseguro.net/politica_privacidade.php" target="_blank"> Políticas de Privacidades</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
