@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;800&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* BACKGROUND COLORS */
+.bg-red{
+    background-color: red;
+}
+
+.bg-gray{
+    background-color: #2B2B2B;
+}
+
+.bg-green{
+    background-color: #1FA73C;
+}
+
+.bg-white{
+    background-color: #ffffff;
+}
+
+/* HELPERS */
+.container{
+    width: 100%;
+}
+
+.padding{
+    padding: 1%;
+}
+
+.margin{
+    margin: 2% 0;
+}
+
+.inline{
+    display: inline;
+}
+
+.flex{
+    display: flex;
+}
+
+.flexbox{
+    display: flexbox;
+}
+
+.block{
+    display: block;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.center{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.thumbnail{
+    width: 20%;
+    height: 20%;
+}
+
+.img-cel{
+    width: 100%;
+}
+
+.img-cel-50{
+    width: 50%;
+}
+
+/* TEXT COLORS */
+.white{
+    color: white;
+}
+
+.gray{
+    color: gray;
+}
+
+.green{
+    color: #00DA65;
+}
+
+.yellow{
+    color: yellow;
+}
+
+/* TEXT HELPERS */
+.title{
+    font-size: 50px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.regular{
+    font-weight: 300;
+}
+
+.shadow{
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-center{
+    text-align: center;   
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.divisor{
+    padding: 0 5%;
+}
+
+/* ELEMENTS */
+.vsl{
+    border-radius: 15px;
+}
+
+.half{
+    width: 50%;;
+}
+
+.btn-cta{
+    border-radius: 50px;
+    animation: bounce .8s infinite alternate;;
+}
+
+.mySlides1{
+    width: 90%;
+    height: 90%;
+}
+
+/* ANIMAÇÕES */
+
+@keyframes bounce{
+    to {
+        transform: scale(1.2);
+    }
+}
+
+/* DESIGN RESPONSIVO */
+
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    iframe{
+        width: 490px;
+        height: 315px;
+    }
+
+    .title{
+        font-size: 35px;
+    }
+
+    .thumbnail{
+        width: 25%;
+        height: 25%;
+    }
+
+    .img-cel{
+        width: 100%;
+    }
+
+    .img-cel-50{
+        width: 50%;
+    }
+}
